@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: white;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+input[type=checkbox] {
+    display: none;
+    pointer-events: none;
+
+    & + label {
+        cursor: pointer;
+        font-size: .8em;
+        display: grid;
+        grid-template-columns: auto 3fr;
+
+        svg {
+            width: 2em;
+            stroke: rgb(0,124,226);
+            stroke-width: 5;
+            fill: white;
+            
+
+            .box {
+                stroke-dasharray: 320;
+                stroke-dashoffset: 0;
+                fill: white;
+                transition: stroke-dashoffset .3s linear;
+            }
+            .check {
+                stroke-dasharray: 70;
+                stroke-dashoffset: 70;
+                fill: none;
+                transition: stroke-dashoffset .3s linear;
+            }
+        }
+
+        span {
+            padding-top: .3em;
+            margin-left: .3em;
+        }
+    }
+
+    &:checked + label {
+        .box {
+            stroke-dashoffset: 320;
+            
+        }
+        .check {
+            stroke-dashoffset: 0;
+        }
+    }
+}
+
+#Content
+{
+    padding: 2%;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    height: auto;
+    background-image: linear-gradient(to right, rgba(0,255,200,0.5), rgba(0,200,220,0.5), rgba(0,140,255,0.5));
+}
+
+#IntroTitel
+{
+    margin-top: 22vh;
+    text-align: center;
+}
+
+#PriceExplination
+{
+    margin: 2%;
+    font-size: 20px;
+    margin-left: 10%
+}
+
+#ExplinationFeatures
+{
+    margin: 3%;
+    margin-top: 5%;
+    font-size: 20px;
+    margin-left: 10%;
+}
+
+#SelectionList
+{
+    margin-left: 2%;
+    width: 90%;
+    margin-left: 10%;
+    list-style: none;
+}
+
+.SelectionElement
+{
+    margin-top: 15px;
+}
+
+#Checkout
+{
+    color: white;
+    border-radius: 25px;
+    height: 200px;
+    margin-top: 5%;
+    margin-right: 5%;
+    text-align: right;
+    margin-bottom: 5%;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0.3));
+}
+
+#TotalPrice
+{
+    font-weight: bold;
+}
+
+#NameTag
+{
+
+}
+
+#email
+{
+
+}
+
+#content
+{
+    width: 20%;
+    height: 200%;
+}
+
+#SubmitButton
+{
+    width: 15%;
+    height: 50px;
+    border: 0;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: rgba(0,140,255,0.5);
+}
+
+#EmailInfo
+{
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 90%;
+}
+
+#submitlink
+{
+    text-decoration: none;
+    color: black;
+}
