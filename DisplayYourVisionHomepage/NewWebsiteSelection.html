@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+    <head>
+        <link href="style/NewWebsiteSectionStyle/NewWebsiteSelection.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="style/HeaderStyle/Header.css">
+        <script src="Java/Java.js"></script>
+    </head>
+
+    <body>
+        <div id="header">
+            <h2 id="Titel">Display Your Vision</h2>
+
+            <img src="style/Textures/Icon/DYV_black.png" alt="" id="Icon">
+
+            <ul id="NavBar">
+                <li class="NavListOJ"><a href="Index.html"><button class="BTN">Start</button></a></li>
+                <li class="NavListOJ"><a href="Pricing.html"><button class="BTN">Pricing</button></li>
+                <li class="NavListOJ"><a href="AboutUs.html"><button class="BTN">About Us</button></a></li>
+                <li class="NavListOJ"><a href="ContactUs.html"><button class="BTN">Contact Us</button></a></li>
+            </ul>
+        </div>
+            
+        <div id="Content">
+            <div class="Intro">
+                <h2 id="IntroTitel"></h2>
+                <h3 id="PriceExplination">
+                    First of all. The Price is calculated by: <br>
+                    -The count and size of pages. <br>
+                    -Extra features. <br>
+                    -Domain <br>
+                </h3>
+            </div>
+
+            <h3 id="ExplinationFeatures">Here you can add some features you want your futur website to have</h3>
+            <ul id="SelectionList">
+                <li class="SelectionElement" id="Design">
+                    <input type="checkbox" name="cb0" id="cb0">
+                    <label for="cb0" id="checkbox">
+                        <svg viewBox="0 0 100 100">
+	                        <path class="box" d="M82,89H18c-3.87,0-7-3.13-7-7V18c0-3.87,3.13-7,7-7h64c3.87,0,7,3.13,7,7v64C89,85.87,85.87,89,82,89z"/>
+                            <polyline class="check" points="25.5,53.5 39.5,67.5 72.5,34.5 "/>
+                        </svg>
+                        <span>Design ~ 100$</span>
+                    </label>
+                </li>
+                <li class="SelectionElement" id="MobileSupport">
+                    <input type="checkbox" name="cb1" id="cb1">
+                    <label for="cb1" id="checkbox">
+                        <svg viewBox="0 0 100 100">
+	                        <path class="box" d="M82,89H18c-3.87,0-7-3.13-7-7V18c0-3.87,3.13-7,7-7h64c3.87,0,7,3.13,7,7v64C89,85.87,85.87,89,82,89z"/>
+                            <polyline class="check" points="25.5,53.5 39.5,67.5 72.5,34.5 "/>
+                        </svg>
+                        <span>Mobile support ~ 100$</span>
+                    </label>
+                </li>
+                <li class="SelectionElement" id="Logo">
+                    <input type="checkbox" name="cb1" id="cb1">
+                    <label for="cb1" id="checkbox">
+                        <svg viewBox="0 0 100 100">
+	                        <path class="box" d="M82,89H18c-3.87,0-7-3.13-7-7V18c0-3.87,3.13-7,7-7h64c3.87,0,7,3.13,7,7v64C89,85.87,85.87,89,82,89z"/>
+                            <polyline class="check" points="25.5,53.5 39.5,67.5 72.5,34.5 "/>
+                        </svg>
+                        <span>Logo ~ 25$</span>
+                    </label>
+                </li>
+                <li class="SelectionElement" id="Video">
+                    <input type="checkbox" name="cb2" id="cb2">
+                    <label for="cb2" id="checkbox">
+                        <svg viewBox="0 0 100 100">
+	                        <path class="box" d="M82,89H18c-3.87,0-7-3.13-7-7V18c0-3.87,3.13-7,7-7h64c3.87,0,7,3.13,7,7v64C89,85.87,85.87,89,82,89z"/>
+                            <polyline class="check" points="25.5,53.5 39.5,67.5 72.5,34.5 "/>
+                        </svg>
+                        <span>Video - 30$</span>
+                    </label>
+                </li>
+            </ul>
+
+            <div id="Checkout">
+                <h3 id="TotalPrice">Total: 400$</h3>
+            </div>
+
+            <div id="EmailInfo">
+                <form action="https://formsubmit.co/https://felix1.opderbecke@bluewin.ch" method="POST">
+                    Name:<br>
+                    <input id="NameTag" type="text" size="20" name="Contact-Name"><br><br>
+                    Email:<br>
+                    <input id="email" type="email" name="Contact-Email"><br><br> 
+                    Message:<br> 
+                    <label id="content"></label><br><br>
+                    <button id="SubmitButton" type="submit" value="Submit">Submit</button>
+                </form>  
+            </div>
+        </div>
+
+        <script src="Java/NewWesbsiteSelection.js"></script>
+    </body>
+</html>
